@@ -28,5 +28,5 @@
 *.app
 
 #Project specific files
-./bin
-./private_data
+bin
+private_data
