@@ -3,6 +3,7 @@
 namespace CREP_CORE{
     Color* searchColor = new Color();
     Color* replaceColor = new Color();
+    cv::Vec4b diffSet = cv::Vec4b(0,0,0,0);
 
     void handleCommands(int argc, char** argv){
         #ifndef NO_TEST_COMMANDS
@@ -13,6 +14,16 @@ namespace CREP_CORE{
         #endif
         CREP_CORE::searchColor = parseColor(argv[3]);
         CREP_CORE::replaceColor = parseColor(argv[4]);
+
+        for(int i = 5; i < argc; i++){
+            #ifndef NO_DEBUG_PRINT
+            std::cout << argv[i] << std::endl;
+            #endif
+            if(argv[i] == "--tollerance"){
+                i++;
+                diffSet = CREP_CORE::getColorVector(parseColor(argv[i]));
+            }
+        }
     }
 
     Color* getReplaceColor( void ){
@@ -21,6 +32,14 @@ namespace CREP_CORE{
 
     Color* getSearchColor( void ){
         return searchColor;
+    }
+
+    cv::Vec4b* getLegDiff( void ){
+        return &diffSet;
+    }
+
+    cv::Vec4b getColorVector(Color* color){
+        return cv::Vec4b(color->getRed(), color->getGreen(), color->getBlue(), color->getAlpha());
     }
 }
 

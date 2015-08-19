@@ -10,5 +10,7 @@ namespace CREP_CORE{
     void handleCommands( int, char** );
     Color* getReplaceColor( void );
     Color* getSearchColor( void );
+    cv::Vec4b* getLegDiff( void );
+    cv::Vec4b getColorVector(Color* color);
 }
 #endif // COMMANDS_H_INCLUDED

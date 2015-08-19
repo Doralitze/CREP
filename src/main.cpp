@@ -41,7 +41,7 @@ int main( int argc, char** argv )
     //modify image
     for( int x = 0; x < image.rows; x++ ) {
       for( int y = 0; y < image.cols; y++ ) {
-          if ( image.at<Vec4b>(x, y) == getColorVector(CREP_CORE::getSearchColor()) ) {
+          if ( image.at<Vec4b>(x, y) == CREP_CORE::getColorVector(CREP_CORE::getSearchColor()) ) {
             image.at<Vec4b>(x, y)[0] = CREP_CORE::getReplaceColor()->getRed();
             image.at<Vec4b>(x, y)[1] = CREP_CORE::getReplaceColor()->getGreen();
             image.at<Vec4b>(x, y)[2] = CREP_CORE::getReplaceColor()->getBlue();
@@ -52,10 +52,6 @@ int main( int argc, char** argv )
     //Save the image
     imwrite(argv[2], image);
     return EXIT_ERROR_NOERROR;
-}
-
-Vec4b getColorVector(Color* color){
-    return Vec4b(color->getRed(), color->getGreen(), color->getBlue(), color->getAlpha());
 }
 
 void displayHelp(){
