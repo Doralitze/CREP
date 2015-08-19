@@ -1,0 +1,6 @@
+#ifndef FILTER_HPP_INCLUDED
+#define FILTER_HPP_INCLUDED
+
+
+
+#endif // FILTER_HPP_INCLUDED

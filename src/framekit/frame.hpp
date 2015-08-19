@@ -1,0 +1,6 @@
+#ifndef FRAME_HPP_INCLUDED
+#define FRAME_HPP_INCLUDED
+
+
+
+#endif // FRAME_HPP_INCLUDED
