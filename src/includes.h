@@ -20,4 +20,6 @@
 #include "color.hpp"
 #include "commands.h"
 
+#include "frame.hpp"
+
 #endif // INCLUDES_H_INCLUDED

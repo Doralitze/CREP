@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
 1437589363 source:/home/leon/Dokumente/dev/CREP/lib/opencv-3.0.0/3rdparty/ffmpeg/ffopencv.c
 
-1438346745 source:/home/leon/Dokumente/dev/CREP/src/main.cpp
+1440154676 source:/home/leon/Dokumente/dev/CREP/src/main.cpp
 	"includes.h"
 	"main.h"
 
-1438348045 /home/leon/Dokumente/dev/CREP/src/includes.h
+1440154561 /home/leon/Dokumente/dev/CREP/src/includes.h
 	<iostream>
 	<string>
 	"../lib/libopencv3/include/opencv2/core/core.hpp"
@@ -17,10 +17,11 @@
 	"color_functions.h"
 	"color.hpp"
 	"commands.h"
+	"frame.hpp"
 
 1437592671 /home/leon/Dokumente/dev/CREP/src/codes.h
 
-1438340250 /home/leon/Dokumente/dev/CREP/src/settings.h
+1440149855 /home/leon/Dokumente/dev/CREP/src/settings.h
 
 1438340074 /home/leon/Dokumente/dev/CREP/src/main.h
 
@@ -602,15 +603,17 @@
 
 1439978907 source:/home/leon/Dokumente/dev/CREP/src/framekit/filter.cpp
 
-1439981942 source:/home/leon/Dokumente/dev/CREP/src/framekit/frame.cpp
+1440156645 source:/home/leon/Dokumente/dev/CREP/src/framekit/frame.cpp
 	"frame.hpp"
 
-1439982473 /home/leon/Dokumente/dev/CREP/src/framekit/frame.hpp
+1440155707 /home/leon/Dokumente/dev/CREP/src/framekit/frame.hpp
+	<iostream>
 	"dimension.hpp"
 	"filter.hpp"
 
-1440064788 /home/leon/Dokumente/dev/CREP/src/framekit/filter.hpp
-	"cl.hpp"
+1440149875 /home/leon/Dokumente/dev/CREP/src/framekit/filter.hpp
+	"settings.h"
+	<CL/cl.hpp>
 
 1397343177 /home/leon/Dokumente/dev/CREP/src/framekit/cl.hpp
 	<windows.h>
@@ -629,4 +632,6 @@
 	<exception>
 	<string>
 	<vector>
+
+1440149855 /home/leon/Dokumente/dev/CREP/src//settings.h
 

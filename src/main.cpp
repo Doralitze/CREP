@@ -11,6 +11,8 @@ int main( int argc, char** argv )
     cout << "Compiled as testing target" << endl;
     #endif
 
+    vector<cl::Platform> CLplatforms = getAllPlatforms();
+
     if( argc < 4)
     {
         displayHelp();

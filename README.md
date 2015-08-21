@@ -11,3 +11,9 @@ Please read the license file first.
 Current development status: alpha
 This means that this programm is nowhere beeing complete
 and there will be much more functionality in the future.
+
+####Dependancies:
+In order to install this software you need to provide the following libraries:
+libopencv-dev
+libclc-dev
+opengl

@@ -18,6 +18,7 @@
 					<Add option="-Wno-deprecated-declarations" />
 					<Add option="-LC_ALL=C" />
 					<Add directory="src/" />
+					<Add directory="src/framekit" />
 				</Compiler>
 				<Linker>
 					<Add library="lib/libopencv3/libopencv_calib3d.so" />
@@ -55,6 +56,7 @@
 					<Add option="-Wmain" />
 					<Add option="-Wno-deprecated-declarations" />
 					<Add directory="src/" />
+					<Add directory="src/framekit" />
 				</Compiler>
 				<Linker>
 					<Add option="-s" />
@@ -412,6 +414,13 @@
 		<Unit filename="src/color_functions.h" />
 		<Unit filename="src/commands.cpp" />
 		<Unit filename="src/commands.h" />
+		<Unit filename="src/framekit/cl.hpp" />
+		<Unit filename="src/framekit/dimension.cpp" />
+		<Unit filename="src/framekit/dimension.hpp" />
+		<Unit filename="src/framekit/filter.cpp" />
+		<Unit filename="src/framekit/filter.hpp" />
+		<Unit filename="src/framekit/frame.cpp" />
+		<Unit filename="src/framekit/frame.hpp" />
 		<Unit filename="src/includes.h" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/main.h" />
