@@ -12,7 +12,9 @@
 
 class Filter{
     public:
-
+        cl::Program::Sources& getSources(void) {return sources;};
+    private:
+        cl::Program::Sources sources;
 };
 
 #endif // FILTER_HPP_INCLUDED

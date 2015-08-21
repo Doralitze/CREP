@@ -5,6 +5,7 @@
 
 #include "dimension.hpp"
 #include "filter.hpp"
+#include "codes.h"
 
 class Frame{
 public:
@@ -19,5 +20,7 @@ private:
 
 std::vector<cl::Platform>& getAllPlatforms(void);
 std::vector<cl::Device>& getAllDevices(void);
+std::vector<cl::Context>& getAllContextes(void);
+
 
 #endif // FRAME_HPP_INCLUDED
