@@ -1,11 +1,11 @@
 # depslib dependency file v1.0
 1437589363 source:/home/leon/Dokumente/dev/CREP/lib/opencv-3.0.0/3rdparty/ffmpeg/ffopencv.c
 
-1440154676 source:/home/leon/Dokumente/dev/CREP/src/main.cpp
+1440852249 source:/home/leon/Dokumente/dev/CREP/src/main.cpp
 	"includes.h"
 	"main.h"
 
-1440154561 /home/leon/Dokumente/dev/CREP/src/includes.h
+1440183214 /home/leon/Dokumente/dev/CREP/src/includes.h
 	<iostream>
 	<string>
 	"../lib/libopencv3/include/opencv2/core/core.hpp"
@@ -19,9 +19,9 @@
 	"commands.h"
 	"frame.hpp"
 
-1440174823 /home/leon/Dokumente/dev/CREP/src/codes.h
+1440236381 /home/leon/Dokumente/dev/CREP/src/codes.h
 
-1440178993 /home/leon/Dokumente/dev/CREP/src/settings.h
+1440183214 /home/leon/Dokumente/dev/CREP/src/settings.h
 
 1438340074 /home/leon/Dokumente/dev/CREP/src/main.h
 
@@ -596,23 +596,26 @@
 	"opencv2/highgui.hpp"
 	"opencv2/ml.hpp"
 
-1439981179 source:/home/leon/Dokumente/dev/CREP/src/framekit/dimension.cpp
+1440183214 source:/home/leon/Dokumente/dev/CREP/src/framekit/dimension.cpp
 	"dimension.hpp"
 
-1439981044 /home/leon/Dokumente/dev/CREP/src/framekit/dimension.hpp
+1440183214 /home/leon/Dokumente/dev/CREP/src/framekit/dimension.hpp
 
-1439978907 source:/home/leon/Dokumente/dev/CREP/src/framekit/filter.cpp
+1440183214 source:/home/leon/Dokumente/dev/CREP/src/framekit/filter.cpp
 
-1440172618 source:/home/leon/Dokumente/dev/CREP/src/framekit/frame.cpp
+1440852443 source:/home/leon/Dokumente/dev/CREP/src/framekit/frame.cpp
 	"frame.hpp"
 
-1440174823 /home/leon/Dokumente/dev/CREP/src/framekit/frame.hpp
+1440852383 /home/leon/Dokumente/dev/CREP/src/framekit/frame.hpp
 	<iostream>
 	"dimension.hpp"
 	"filter.hpp"
 	"codes.h"
+	"executiontask.h"
+	"hsvpixel.h"
+	"rgbapixel.hpp"
 
-1440173002 /home/leon/Dokumente/dev/CREP/src/framekit/filter.hpp
+1440183214 /home/leon/Dokumente/dev/CREP/src/framekit/filter.hpp
 	"settings.h"
 	<CL/cl.hpp>
 
@@ -634,16 +637,27 @@
 	<string>
 	<vector>
 
-1440178993 /home/leon/Dokumente/dev/CREP/src//settings.h
+1440183214 /home/leon/Dokumente/dev/CREP/src//settings.h
 
-1440178773 source:/home/leon/Dokumente/dev/CREP/src/framekit/executiontask.cpp
+1440236465 source:/home/leon/Dokumente/dev/CREP/src/framekit/executiontask.cpp
 	"executiontask.h"
 
-1440179315 /home/leon/Dokumente/dev/CREP/src/framekit/executiontask.h
+1440854739 /home/leon/Dokumente/dev/CREP/src/framekit/executiontask.h
 	<CL/cl.hpp>
 	<string.h>
 	<iostream>
 	"codes.h"
 
-1440174823 /home/leon/Dokumente/dev/CREP/src//codes.h
+1440236381 /home/leon/Dokumente/dev/CREP/src//codes.h
+
+1440670039 /home/leon/Dokumente/dev/CREP/src/framekit/hsvpixel.h
+	"rgbapixel.hpp"
+
+1440670337 source:/home/leon/Dokumente/dev/CREP/src/framekit/hsvpixel.cpp
+	"hsvpixel.h"
+
+1440852022 /home/leon/Dokumente/dev/CREP/src/framekit/rgbapixel.hpp
+
+1440852022 source:/home/leon/Dokumente/dev/CREP/src/framekit/rgbapixel.cpp
+	"rgbapixel.hpp"
 

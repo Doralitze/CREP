@@ -11,7 +11,20 @@ int main( int argc, char** argv )
     cout << "Compiled as testing target" << endl;
     #endif
 
-    vector<cl::Platform> CLplatforms = getAllPlatforms();
+    //Test Framekit
+    //vector<cl::Platform> CLplatforms = getAllPlatforms();
+    Dimension* d = new Dimension();
+    RGBAPixel* p = new RGBAPixel();
+    p->setRed(128);
+    p->setBlue(128);
+    d->SetHeight(500);
+    d->SetWidth(500);
+    Frame* f = new Frame(*d, p);
+    for(unsigned int x = 0; x < 500; x++)
+        for(unsigned int y = 0; y < 500; y++)
+            if(!(f->getDataAt(x, y) == *p))
+                cout << "found invalid pixel @" << to_string(x) << "," << to_string(y) << endl;
+    cout << "passed FK test" << endl;
 
     if( argc < 4)
     {

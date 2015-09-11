@@ -39,6 +39,10 @@
 					<Add library="lib/libopencv3/libopencv_video.so" />
 					<Add library="lib/libopencv3/libopencv_videoio.so" />
 					<Add library="lib/libopencv3/libopencv_videostab.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libGLEW.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libOpenCL.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libamdocl64.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libglut.so" />
 				</Linker>
 				<Environment>
 					<Variable name="LC_ALL" value="C" />
@@ -78,6 +82,10 @@
 					<Add library="lib/libopencv3/libopencv_video.so" />
 					<Add library="lib/libopencv3/libopencv_videoio.so" />
 					<Add library="lib/libopencv3/libopencv_videostab.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libGLEW.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libOpenCL.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libamdocl64.so" />
+					<Add library="lib/OpenCL/lib/x86_64/libglut.so" />
 				</Linker>
 				<Environment>
 					<Variable name="LC_ALL" value="C" />
@@ -414,13 +422,20 @@
 		<Unit filename="src/color_functions.h" />
 		<Unit filename="src/commands.cpp" />
 		<Unit filename="src/commands.h" />
+		<Unit filename="src/filters/colorreplace_kernel.cl" />
 		<Unit filename="src/framekit/cl.hpp" />
 		<Unit filename="src/framekit/dimension.cpp" />
 		<Unit filename="src/framekit/dimension.hpp" />
+		<Unit filename="src/framekit/executiontask.cpp" />
+		<Unit filename="src/framekit/executiontask.h" />
 		<Unit filename="src/framekit/filter.cpp" />
 		<Unit filename="src/framekit/filter.hpp" />
 		<Unit filename="src/framekit/frame.cpp" />
 		<Unit filename="src/framekit/frame.hpp" />
+		<Unit filename="src/framekit/hsvpixel.cpp" />
+		<Unit filename="src/framekit/hsvpixel.h" />
+		<Unit filename="src/framekit/rgbapixel.cpp" />
+		<Unit filename="src/framekit/rgbapixel.hpp" />
 		<Unit filename="src/includes.h" />
 		<Unit filename="src/main.cpp" />
 		<Unit filename="src/main.h" />

@@ -11,12 +11,15 @@
 class ExecutionTask
 {
     public:
-        ExecutionTask();
+        ExecutionTask(cl::Context* context, cl::Device* device);
         virtual ~ExecutionTask();
         cl::Program& getContext(void){return program;}
-        void compile(cl::Program::Sources sources, cl::Context context);
+        void compile(cl::Program::Sources sources, std::vector<std::string>* kernel_code);
     protected:
     private:
+        bool busy;
+        cl::Context* contextPtr;
+        cl::Device* devicePtr;
         cl::Program program;
 };
 

@@ -8,4 +8,5 @@
 #define EXIT_ERROR_CL_COMPILE 4
 #define EXIT_ERROR_CL_INIT 5
 
+
 #endif // CODES_H_INCLUDED
